@@ -22,8 +22,9 @@ const ShortenModal = () => {
             const shortenedID = res?.data?.shortURL;
             setShortenedURL(`http://${shortenedID}.com`);
         })
-    };
+    }
 
+    // modal render
     return (
         <div className="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog">
