@@ -19,6 +19,7 @@ const App = () => {
         setOpen(false);
     }
    
+    // load container with main button and modal
     return (
         <div class="container">
             <img src={mainLogo} alt="ShortDest logo" />
