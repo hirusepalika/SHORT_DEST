@@ -7,11 +7,14 @@ const ShortenModal = () => {
     const [enteredURL, setEnteredURL] = useState('');
     const [shortenedURL, setShortenedURL] = useState('');
     
+    // when user enters - catch user input here and update state
     const onChange = (e) => {
         setEnteredURL(e.target.value);   
     }
+
+    // what do to when shorten button is clicked
+    // call post call to node server with shorten endpoint
     const onShortenClick = () => {
-        console.log("enteredURL", enteredURL);
         axios.post("http://localhost:8000/shorten", {longURL: enteredURL})
         .then(res => {
             console.log("resssss, ", res);
