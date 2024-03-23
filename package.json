@@ -32,5 +32,6 @@
     "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development",
     "deploy": "gh-pages -d dist"
-  }
+  },
+  "homepage": "https://hirusepalika.github.io/SHORT_DEST/"
 }
