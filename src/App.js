@@ -6,11 +6,15 @@ import mainLogo from './assets/images/short_dest_main.png';
 import ShortenModal from "./Modal";
 
 const App = () => {
+    // state management
     const [open, setOpen] = useState(false);
+
+    // handle modal open
     const handleOpen = () => {
-        console.log("ami here??")
         setOpen(true);
     }
+
+    // handle modal close
     const handleClose = () => {
         setOpen(false);
     }

@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
 const ShortenModal = () => {
+    // state management
     const [enteredURL, setEnteredURL] = useState('');
     const [shortenedURL, setShortenedURL] = useState('');
     
